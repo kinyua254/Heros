@@ -1,0 +1,37 @@
+{{#partial "mainContent"}}
+    <div class="heroHeader text-center">
+        <h3 class="text-success">VIEW YOUR HERO CREATIONS</h3>
+        <hr class="w-25 mx-auto">
+    </div>
+
+    {{#if squad}}
+
+        <div class="container">
+            <div class="row">
+                {{#each squad}}
+                    <div class="col-md-3">
+                        <div class="card heroListCard mt-4">
+                            <div class="card-body">
+                                <p><strong>Name:</strong> {{ squadName }}</p>
+                                <hr>
+                                <p><strong>Size:</strong> {{ squadSize }}</p>
+                                <hr>
+                                <p><strong>Cause:</strong> {{ squadCause }}</p>
+                            </div>
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+        </div>
+
+    {{else}}<!--no posts-->
+    <div class="noSquadsWarning text-center mt-4">
+        <h5 class="text-danger">!!YOU HAVEN`T CREATED ANY SQUADS!! PUT YOUR IMAGINATION TO THE TEST AND CREATE SOME</h5>
+        <button class="btn btn-danger text-white decoration-none mt-4"><a class="text-white text-decoration-none" href="/">RETURN</a></button>
+    </div>
+
+    {{/if}}
+
+{{/partial}}
+
+{{> layout.hbs}}
