@@ -5,7 +5,9 @@ By Victor Mutugi Murithi
 
 ## Description
 
-This is an application that allows the user to create heroes and squads. The user can also view the created heroes and squads
+This is an application that allows the user to create heroes and squads. 
+
+Allowing the user to view the heroes and squads that they created.
 
 ## Setup/Installation Requirements
 
