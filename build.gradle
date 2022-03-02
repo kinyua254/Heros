@@ -5,6 +5,7 @@ plugins {
 
 group 'com.moringa.app'
 version '1.0-SNAPSHOT'
+mainClassName = 'App'
 
 sourceCompatibility = 1.8
 
