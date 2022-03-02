@@ -18,40 +18,41 @@ class SquadTest {
 
     @Test
     public void SquadInstantiatesCorrectly() throws Exception {
-        Squad squad = new Squad("Avengers", "10", "Save America");
+        Squad squad = new Squad("Eternals", "9", "Saving the whole world");
         assertEquals(true, squad instanceof Squad);
     }
 
     @Test
     public void Squad_getsSquadNameCorrectly_string() throws Exception{
-        Squad squad = new Squad("Avengers", "10", "Save America");
-        assertEquals("Avengers", squad.getSquadName());
+        Squad squad = new Squad("Eternals", "9", "Saving the whole world");
+        assertEquals("Eternals", squad.getSquadName());
     }
 
     @Test
     public void Squad_getsMaxSizeCorrectly_int() throws Exception{
-        Squad squad = new Squad("Avengers", "10", "Save America");
-        assertEquals("10", squad.getSquadSize());
+        Squad squad = new Squad("Eternals", "9", "Saving the whole world");
+        assertEquals("9", squad.getSquadSize());
     }
 
     @Test
     public void Squad_getsSquadsNameCorrectly() throws Exception {
-        Squad squad = new Squad("Avengers", "10", "Save America");
-        assertEquals("Save America", squad.getSquadCause());
+        Squad squad = new Squad("Eternals", "9", "Saving the whole world");
+        assertEquals("Saving the whole world", squad.getSquadCause());
     }
 
     @Test
     public void all_returnsAllInstancesOfSquad_true() throws Exception {
-        Squad firstSquad = new Squad("Avengers", "10", "Save America");
-        Squad secondSquad = new Squad("SuperMan", "15", "fight-corruption");
+        Squad firstSquad = new Squad("Eternals", "9", "Saving the whole world");
+        Squad secondSquad = new Squad("Avengers", "10", "protect America");
         assertTrue(Squad.getListOfSquads().contains(firstSquad));
         assertTrue(Squad.getListOfSquads().contains(secondSquad));
     }
 
     @Test
     public void find_returnsSquadWithSameId_secondSquad() {
-        Squad firstSquad = new Squad("Avengers", "10", "Save America");
-        Squad secondSquad = new Squad("SuperMan", "15", "fight-corruption");
+        Squad firstSquad = new Squad("Eternals", "9", "Saving the whole world");
+        Squad secondSquad = new Squad("Avengers", "10", "protect America");
+        assertEquals(Squad.find(firstSquad.getId()), firstSquad);
         assertEquals(Squad.find(secondSquad.getId()), secondSquad);
     }
 
