@@ -1,4 +1,4 @@
-## HERO SQUAD JAVA APPLICATION
+## HERO AND SQUAD JAVA APPLICATION
 
 A Hero and Squad Application
 By Victor Mutugi Murithi
