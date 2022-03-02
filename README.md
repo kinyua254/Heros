@@ -15,6 +15,7 @@ git clone https://github.com/kinyua254/Heros.git
 ## Download and update all your dependencies
 
 *gradle build
+
 *gradle run
 
 
