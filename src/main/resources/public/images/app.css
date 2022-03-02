@@ -1,0 +1,51 @@
+.banner-image{
+background-image: url('/images/1.4.jpg');
+height: 60%;
+width: 90%;
+border-radius: 30px;
+background-repeat: no-repeat;
+background-size:cover;
+background-position: center-center;
+}
+
+.navbar{
+margin-top: 0px;
+}
+
+.navbar-dark .navbar-toggler-icon{
+background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28205, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.list-item > a{
+cursor: pointer;
+padding: 0px 15px;
+text-decoration: none;
+color: #000000;
+font-weight: 600;
+}
+
+.list-item > a:hover{
+color: #bf0000;
+}
+
+a:active{
+color: #bf0000 !important;
+}
+
+.heroSuccessCard{
+width: 30%;
+margin-top: 15%;
+border-radius: 15px;
+box-shadow: inset -5px -5px 5px rgba(0,0,0,0.1),
+            inset -5px -5px 5px rgba(0,0,0,0.1);
+}
+
+.heroButtons button{
+margin: 0px 15px;
+}
+
+.heroListCard{
+border-radius: 15px;
+box-shadow: inset -5px -5px 5px rgba(0,0,0,0.1),
+            inset -5px -5px 5px rgba(0,0,0,0.1);
+}
