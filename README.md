@@ -28,7 +28,9 @@ View created heroes and squads
 ## Technologies Used
 
 *Java
+
 *Handlebars
+
 *Spark
 
 ## License
