@@ -8,7 +8,7 @@ public class Hero {
     private String heroPower;
     private String heroWeakness;
 
-    private static ArrayList<Hero> listOfHeroes = new ArrayList<Hero>();
+    private static ArrayList<Hero> listOfHeroes = new ArrayList<>();
     private int id;
 
     public Hero(String heroName, String heroAge, String heroPower, String heroWeakness) {
