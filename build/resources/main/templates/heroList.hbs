@@ -1,0 +1,39 @@
+{{#partial "mainContent"}}
+    <div class="heroHeader text-center">
+        <h3 class="text-success">SEE YOUR OWN MODIFIED HERO</h3>
+        <hr class="w-25 mx-auto">
+    </div>
+
+    {{#if hero}}
+
+        <div class="container">
+            <div class="row">
+                {{#each hero}}
+                    <div class="col-md-3">
+                        <div class="card heroListCard mt-4">
+                            <div class="card-body">
+                                <p><strong>Name:</strong> {{ heroName }}</p>
+                                <hr>
+                                <p><strong>Age:</strong> {{ heroAge }}</p>
+                                <hr>
+                                <p><strong>Power:</strong> {{ heroPower }}</p>
+                                <hr>
+                                <p><strong>Weakness:</strong> {{ heroWeakness }}</p>
+                            </div>
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+        </div>
+
+    {{else}}<!--no posts-->
+    <div class="noHeroWarning text-center mt-4">
+        <h5 class="text-danger">YOU DON`T HAVE ANY HEROES CREATED CURRENTLY</h5>
+        <button class="btn btn-danger text-white decoration-none mt-4"><a class="text-white text-decoration-none" href="/">RETURN</a></button>
+    </div>
+
+    {{/if}}
+
+{{/partial}}
+
+{{> layout.hbs}}

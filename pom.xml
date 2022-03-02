@@ -88,9 +88,9 @@
                 <configuration>
                     <jdkVersion>1.8</jdkVersion>
                     <!-- Change this to YOUR application name! -->
-                    <appName>Heros</appName>
+                    <appName>hero-app</appName>
                     <processTypes>
-                        <web>java -jar target/javaherosquad-1.0-jar-with-dependencies.jar</web>
+                        <web>java -jar target/hero-app-1.0-jar-with-dependencies.jar</web>
                     </processTypes>
                 </configuration>
             </plugin>
