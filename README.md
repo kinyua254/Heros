@@ -9,12 +9,14 @@ This is an application that allows the user to create heroes and squads. The use
 
 ## Setup/Installation Requirements
 
-Clone or download the repository
+## Clone or download the repository
 git clone https://github.com/kinyua254/Heros.git
-Run gradle build to download and update all your dependencies
-gradle build
-After gradle building, do gradle run to start the project in the server
-gradle run
+
+## Download and update all your dependencies
+
+*gradle build
+*gradle run
+
 
 ## Live link link
 
