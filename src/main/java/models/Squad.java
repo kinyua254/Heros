@@ -7,7 +7,7 @@ public class Squad {
     private String squadSize;
     private String squadCause;
 
-    private static ArrayList<Squad> listOfSquads = new ArrayList<Squad>();
+    private static ArrayList<Squad> listOfSquads = new ArrayList<>();
     private int id;
 
     public Squad(String squadName, String squadSize, String squadCause) {

@@ -50,7 +50,4 @@ public class Hero {
         return listOfHeroes.get(id - 1);
     }
 
-    public static void clearAllPosts(){
-        listOfHeroes.clear();
-    }
 }

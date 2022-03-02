@@ -61,8 +61,4 @@ class HeroTest {
     @Test
     void findById() {
     }
-
-    @Test
-    void clearAllPosts() {
-    }
 }
