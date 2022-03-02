@@ -53,4 +53,36 @@ class HeroTest {
         assertEquals(true, Hero.getListOfHeroes().contains(firstHero));
         assertEquals(true, Hero.getListOfHeroes().contains(secondHero));
     }
+
+    @Test
+    void getHeroName() {
+    }
+
+    @Test
+    void getHeroAge() {
+    }
+
+    @Test
+    void getHeroPower() {
+    }
+
+    @Test
+    void getHeroWeakness() {
+    }
+
+    @Test
+    void getListOfHeroes() {
+    }
+
+    @Test
+    void getId() {
+    }
+
+    @Test
+    void findById() {
+    }
+
+    @Test
+    void clearAllPosts() {
+    }
 }
