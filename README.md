@@ -31,6 +31,6 @@ View created heroes and squads
 *Handlebars
 *Spark
 
-##License
+## License
 
 This is under the MIT license Copyright (c) 2022
