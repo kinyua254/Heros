@@ -18,71 +18,39 @@ class HeroTest {
 
     @Test
     public void newHeroInstantiatesCorrectly() {
-        new Hero("hulk", "32", "strength", "anger");
-        Assert.isTrue(true,"Success");
+        new Hero("spiderman", "28", "spiderwebs", "kindness");
+        Assert.isTrue(true,"Successful");
     }
 
     @Test
     public void Hero_instantiatesCorrectlyWithHeroName_string () throws Exception{
-        Hero hero = new Hero("hulk","34","Strength", "anger");
-        assertEquals("hulk",hero.getHeroName());
+        Hero hero = new Hero("spiderman","28","spiderwebs", "kindness");
+        assertEquals("spiderman",hero.getHeroName());
     }
 
     @Test
     public void Hero_getsHeroAgeCorrectly_int() throws  Exception {
-        Hero hero = new Hero("hulk","34","Strength", "anger");
-        assertEquals("34",hero.getHeroAge());
+        Hero hero = new Hero("spiderman","28","spiderwebs", "kindness");
+        assertEquals("28",hero.getHeroAge());
     }
 
     @Test
     public void Hero_instantiatesCorrectlyWithHeroesSpecialPower_string() throws Exception {
-        Hero hero = new Hero("hulk","34","Strength", "anger");
-        assertEquals("Strength", hero.getHeroPower());
+        Hero hero = new Hero("spiderman","28","spiderwebs", "kindness");
+        assertEquals("spiderwebs", hero.getHeroPower());
     }
 
     @Test
     public void Hero_instantiatesCorrectlyWithHeroWeakness_string() throws Exception{
-        Hero hero = new Hero("hulk","34","Strength", "anger");
-        assertEquals("anger", hero.getHeroWeakness());
+        Hero hero = new Hero("spiderman","28","spiderwebs", "kindness");
+        assertEquals("kindness", hero.getHeroWeakness());
     }
 
     @Test
     public void all_returnsAllInstancesOfHero_true() {
-        Hero firstHero = new Hero("hulk","34","Strength", "anger");
-        Hero secondHero = new Hero("hulk","34","Strength", "anger");
+        Hero firstHero = new Hero("spiderman", "28", "spiderwebs", "kindness");
+        Hero secondHero = new Hero("spiderman", "28", "spiderwebs", "kindness");
         assertEquals(true, Hero.getListOfHeroes().contains(firstHero));
         assertEquals(true, Hero.getListOfHeroes().contains(secondHero));
-    }
-
-    @Test
-    void getHeroName() {
-    }
-
-    @Test
-    void getHeroAge() {
-    }
-
-    @Test
-    void getHeroPower() {
-    }
-
-    @Test
-    void getHeroWeakness() {
-    }
-
-    @Test
-    void getListOfHeroes() {
-    }
-
-    @Test
-    void getId() {
-    }
-
-    @Test
-    void findById() {
-    }
-
-    @Test
-    void clearAllPosts() {
     }
 }
