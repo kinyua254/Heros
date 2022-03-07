@@ -50,8 +50,8 @@ class HeroTest {
     public void all_returnsAllInstancesOfHero_true() {
         Hero firstHero = new Hero("spiderman", "28", "spiderwebs", "kindness");
         Hero secondHero = new Hero("spiderman", "28", "spiderwebs", "kindness");
-        assertEquals(true, Hero.getListOfHeroes().contains(firstHero));
-        assertEquals(true, Hero.getListOfHeroes().contains(secondHero));
+        assertTrue( Hero.getListOfHeroes().contains(firstHero));
+        assertTrue( Hero.getListOfHeroes().contains(secondHero));
     }
 
     @Test
