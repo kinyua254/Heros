@@ -9,7 +9,6 @@ public class Hero {
     private String heroWeakness;
 
     private static ArrayList<Hero> listOfHeroes = new ArrayList<>();
-    private int id;
 
     public Hero(String heroName, String heroAge, String heroPower, String heroWeakness) {
         this.heroName = heroName;
@@ -17,7 +16,6 @@ public class Hero {
         this.heroPower = heroPower;
         this.heroWeakness = heroWeakness;
         listOfHeroes.add(this);
-        this.id = listOfHeroes.size();
     }
 
 
@@ -40,14 +38,6 @@ public class Hero {
 
     public static ArrayList<Hero> getListOfHeroes() {
         return listOfHeroes;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public static Hero findById(int id){
-        return listOfHeroes.get(id - 1);
     }
 
 }
