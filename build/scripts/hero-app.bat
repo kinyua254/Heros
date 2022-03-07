@@ -71,7 +71,7 @@ set CLASSPATH=%APP_HOME%\lib\hero-app-1.0-SNAPSHOT.jar;%APP_HOME%\lib\spark-temp
 
 
 @rem Execute hero-app
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %HERO_APP_OPTS%  -classpath "%CLASSPATH%"  %*
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %HERO_APP_OPTS%  -classpath "%CLASSPATH%" App %*
 
 :end
 @rem End local scope for the variables with windows NT shell
